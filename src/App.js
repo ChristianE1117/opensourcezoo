@@ -1,8 +1,22 @@
-import { useEffect } from "react";
 import "./index.css";
 import { Link } from "react-router-dom";
+import axios from 'axios';
+import React, {useState, useEffect } from 'react';
 
 export function Animals() {
+
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    axios.get('https://clientsidebackend-hraxa5eha9ctc9hv.canadacentral-01.azurewebsites.net/api/Zoo/Animals')
+      .then(response => {
+        setPosts(response.data);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  }, []);
+
   return (
     <div>
       <nav>
@@ -14,7 +28,18 @@ export function Animals() {
       <h1>Animals</h1>
 
       <ul className="animalList">
-        <li className="animalListItem">
+            {posts.map(post => (
+              <li className="animalListItem" key={post.animalID}>
+                <h2 className="animalName">{post.name}</h2>
+
+                <p className="animalDescription">{post.description}</p>
+                <p className="animalHabitat">{post.habitat}</p>
+                <p className="animalSize">{post.size}</p>
+              </li>
+            ))}
+
+
+        {/* <li className="animalListItem">
             <h2 className="animalName">Panda</h2>
             <img src={require("./assets/Images/Panda.webp")} width="200px" />
 
@@ -53,7 +78,7 @@ export function Animals() {
             <p className="animalDescription">The tiger (Panthera tigris) is the largest living cat species. \r\n            It is most recognizable for its black stripes on orange fur with a white underside1. As an apex predator, it primarily preys on ungulates, such as deer and wild boar. \r\n            Tigers are powerful hunters with sharp teeth, strong jaws, and agile bodies.</p>
             <p className="animalHabitat">They are found in the wild in parts of Russia, China, and South and Southeast Asia.</p>
             <p className="animalSize">The largest male Siberian tigers may grow up to 3.7 metres (12.1 feet) in body length (including a 1-metre- [3.3-foot-] long tail) and weigh up to 423 kg (about 933 pounds).</p>
-        </li>
+        </li> */}
       </ul>
     </div>
   )
