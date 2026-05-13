@@ -37,48 +37,6 @@ export function Animals() {
                 <p className="animalSize">{post.size}</p>
               </li>
             ))}
-
-
-        {/* <li className="animalListItem">
-            <h2 className="animalName">Panda</h2>
-            <img src={require("./assets/Images/Panda.webp")} width="200px" />
-
-            <p className="animalDescription">The giant panda (Ailuropoda melanoleuca) is a bear species endemic to China. \r\n            It is characterized by its black-and-white coat and rotund body. \r\n            Pandas are easily recognized by their starkly contrasting patches of black and white fur, with black ears and eye patches. \r\n            They primarily eat bamboo shoots and leaves.</p>
-            <p className="animalHabitat">Pandas inhabit the bamboo forests in the mountains of central China.</p>
-            <p className="animalSize">Adult panda bears can weigh as much as 100 kilos (220 pounds) and be 6 feet in length. </p>
-        </li>
-        <li className="animalListItem">
-            <h2 className="animalName">Giraffe</h2>
-            <img src={require("./assets/Images/Giraffe.jpg")} width="200px" />
-
-            <p className="animalDescription">The giraffe is a large African hoofed mammal belonging to the genus Giraffa. \r\n            It is the tallest living terrestrial animal and the largest ruminant on Earth.</p>
-            <p className="animalHabitat">Giraffes are the tallest land animals. Male giraffes can reach heights of up to 18 feet (5.5 meters), \r\n            while females are slightly shorter, growing up to 14 feet (4.3 meters)</p>
-            <p className="animalSize">Most giraffes live in grasslands and open woodlands in East Africa, \r\n            especially in reserves such as the Serengeti National Park and the Amboseli National Park. \r\n            Some are also found in the reserves of Southern Africa.</p>
-        </li>
-        <li className="animalListItem">
-            <h2 className="animalName">Lion</h2>
-            <img src={require("./assets/Images/Lion.jpg")} width="200px" />
-
-            <p className="animalDescription">The lion (Panthera leo) is a large cat native to Africa and India. \r\n            It has a muscular, broad-chested body, a short, rounded head, round ears, and a hairy tuft at the end of its tail. \r\n            Adult male lions are larger than females and have a prominent mane. \r\n            They are most active at night and prefer grassland, savanna, dense scrub, and open woodland.</p>
-            <p className="animalHabitat">A full-grown male lion is about 1.8–2.1 meters (6–7 feet) long, excluding the 1-meter tail, and weighs 170–230 kg (370–500 pounds).</p>
-            <p className="animalSize">Lions live in a variety of habitats but prefer grassland, savanna, dense scrub, and open woodland. \r\n            Historically, they lived across much of Europe, Asia, and Africa, \r\n            but now they are mainly found in parts of Africa south of the Sahara.</p>
-        </li>
-        <li className="animalListItem">
-            <h2 className="animalName">Rhino</h2>
-            <img src={require("./assets/Images/Rhino.jpg")} width="200px" />
-
-            <p className="animalDescription">Rhinoceros, commonly known as rhinos, are large, armored ungulates. \r\n            They have a robust, cylindrical body with a large head, relatively short legs, and short tail. \r\n            The characteristic feature of these animals is a large horn in the middle of their faces; some species have a second, \r\n            smaller horn. Rhinos are among the largest terrestrial animals in the world. \r\n            They are one of the few megaherbivores still living, maintaining diverse African grass and woodlands.</p>
-            <p className="animalHabitat">The preferred habitat varies depending on the species, but range from savannas, grassland plains, wetlands, and dense forests in tropical regions. \r\n            Rhinos are native to Africa and Southern Asia.</p>
-            <p className="animalSize">Modern rhinoceroses can range from 8 feet long and 5 feet high (Sumatran rhinoceros) to 13 feet long and nearly 7 feet high (white rhinoceros). \r\n            White rhinos are the largest, growing up to 12 to 13 feet long and weighing around 5,000 lbs.</p>
-        </li>
-        <li className="animalListItem">
-            <h2 className="animalName">Tiger</h2>
-            <img src={require("./assets/Images/Tiger.jpg")} width="200px" />
-
-            <p className="animalDescription">The tiger (Panthera tigris) is the largest living cat species. \r\n            It is most recognizable for its black stripes on orange fur with a white underside1. As an apex predator, it primarily preys on ungulates, such as deer and wild boar. \r\n            Tigers are powerful hunters with sharp teeth, strong jaws, and agile bodies.</p>
-            <p className="animalHabitat">They are found in the wild in parts of Russia, China, and South and Southeast Asia.</p>
-            <p className="animalSize">The largest male Siberian tigers may grow up to 3.7 metres (12.1 feet) in body length (including a 1-metre- [3.3-foot-] long tail) and weigh up to 423 kg (about 933 pounds).</p>
-        </li> */}
       </ul>
     </div>
   )
